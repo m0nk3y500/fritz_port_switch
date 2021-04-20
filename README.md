@@ -17,3 +17,8 @@ Change your settings:
 
 	- Go in the *.py script
 	- change Port and Client Ip for your settings
+
+
+Documantation:
+
+	- https://avm.de/fileadmin/user_upload/Global/Service/Schnittstellen/AVM_TR-064_first_steps.pdf

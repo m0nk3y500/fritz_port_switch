@@ -15,3 +15,6 @@ Change your settings:
   - username = your personal created user
   - kennwort = the password of the user
   - 192.168.178.1 = is a standart fritz Host 
+
+	- Go in the *.py script
+	- change Port and Client Ip for your settings

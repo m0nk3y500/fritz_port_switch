@@ -141,7 +141,9 @@ def task_to_take():
         cfg = load(ymlfile, Loader=Loader)
 
     username = cfg["user"] # auslesen der ersten Zeile
+    print(username)
     kennwort = cfg["password"] # auslesen der zweiten Zeile
+    print(kennwort)
     host = cfg["host"] # auslesen der dritten Zeile
 
     # Variable für die Verbindung zu FritzBox festlegen

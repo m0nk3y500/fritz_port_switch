@@ -51,8 +51,6 @@ def checkSettings():
     with open("config.yml", "r") as ymlfile:
         cfg = load(ymlfile, Loader=Loader)
 
-
-    SettingCheckResult = ""
     MyErrorLog = []
 
     if cfg["host"] == None:
@@ -119,10 +117,13 @@ def checkSettings():
 def task_to_take():
 
     print("\nMit Eingabe beginnen ...\n")
-    host_intern = input("Host eingeben:\n" + Fore.YELLOW)
+    host_intern = str(input("Host eingeben:\n" + Fore.YELLOW))
+    print(host_intern)
     port_intern = str(input(Fore.GREEN + "\nPort-Intern eingeben:\n" + Fore.YELLOW))
+    print(port_intern)
     port_extern = str(input(Fore.GREEN + "\nPort-Extern eingeben:\n" + Fore.YELLOW))
-    desc = input(Fore.GREEN + "\nBeschreibung:\n" + Fore.YELLOW)
+    print(port_extern)
+    desc = str(input(Fore.GREEN + "\nBeschreibung:\n" + Fore.YELLOW))
     
 
     # Dictonary erstellen für die Daten übergabe zur Fritzbox (TR-064 läuft über XML)
@@ -141,9 +142,7 @@ def task_to_take():
         cfg = load(ymlfile, Loader=Loader)
 
     username = cfg["user"] # auslesen der ersten Zeile
-    print(username)
     kennwort = cfg["password"] # auslesen der zweiten Zeile
-    print(kennwort)
     host = cfg["host"] # auslesen der dritten Zeile
 
     # Variable für die Verbindung zu FritzBox festlegen

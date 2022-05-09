@@ -3,14 +3,11 @@
 # ...
 
 # Modul Import
-from os import stat, system, name
-from turtle import st
-from colorama import Fore, Back, Style
+from os import system, name
+from colorama import Fore, Back
 import time
 from yaml import load, Loader, dump
-import requests
 from fritzconnection import FritzConnection
-
 
 #VARs
 cfg = []

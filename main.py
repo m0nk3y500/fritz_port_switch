@@ -25,10 +25,6 @@ def clear():
     else:
         _ = system('clear')
 
-def look_up():
-
-    clear() #Fenster Inhalt löschen
-
     print()
     print(Fore.WHITE + '----------------------------')
     print(Fore.WHITE + 'Fritz-PortControl from M0nk3y500')
@@ -39,6 +35,10 @@ def look_up():
     # time.sleep(0.2)
     print("\nÜberprüfe Einstellungen ...\n")
     # time.sleep(0.2)
+
+def look_up():
+
+    clear() #Fenster Inhalt löschen
 
     checkSettings()
     time.sleep(0.2)
@@ -116,13 +116,18 @@ def checkSettings():
 
 def task_to_take():
 
+    clear()
+
     print("\nMit Eingabe beginnen ...\n")
     host_intern = str(input("Host eingeben:\n" + Fore.YELLOW))
-    print(host_intern)
+
+    clear()
     port_intern = str(input(Fore.GREEN + "\nPort-Intern eingeben:\n" + Fore.YELLOW))
-    print(port_intern)
+
+    clear()
     port_extern = str(input(Fore.GREEN + "\nPort-Extern eingeben:\n" + Fore.YELLOW))
-    print(port_extern)
+
+    clear()
     desc = str(input(Fore.GREEN + "\nBeschreibung:\n" + Fore.YELLOW))
     
 

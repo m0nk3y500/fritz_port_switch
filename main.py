@@ -118,9 +118,10 @@ def checkSettings():
 def task_to_take():
 
     print("\nMit Eingabe beginnen ...\n")
-    host_intern = input("Host eingeben:\n" + Fore.BLACK)
-    port_intern = input("\nPort-Intern eingeben:\n" + Fore.BLACK)
-    port_extern = input("\nPort-Extern eingeben:\n" + Fore.BLACK)
+    host_intern = input("Host eingeben:\n" + Fore.YELLOW)
+    port_intern = input("\nPort-Intern eingeben:\n" + Fore.YELLOW)
+    port_extern = input("\nPort-Extern eingeben:\n" + Fore.YELLOW)
+    desc = input("\nBeschreibung:\n" + Fore.YELLOW)
     
 
     # Dictonary erstellen für die Daten übergabe zur Fritzbox (TR-064 läuft über XML)
@@ -131,13 +132,13 @@ def task_to_take():
         "NewInternalPort": port_intern,  # der Port des Clients
         "NewInternalClient": host_intern,  # die Ip des Client
         "NewEnabled": "1",  # status ob ein oder aus 1=ein 0=aus
-        "NewPortMappingDescription": "HTTP-Server",  # Beschreibung die in der FritzBox dabei steht
+        "NewPortMappingDescription": desc,  # Beschreibung die in der FritzBox dabei steht
         "NewLeaseDuration": "0"  # Dauer der status setzung... wird aber nur 0 akzeptiert
     }
 
     with open("config.yml", "r") as ymlfile:
         cfg = load(ymlfile, Loader=Loader)
-        
+
     username = cfg["user"] # auslesen der ersten Zeile
     kennwort = cfg["password"] # auslesen der zweiten Zeile
     host = cfg["host"] # auslesen der dritten Zeile

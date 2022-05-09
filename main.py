@@ -10,7 +10,7 @@ from yaml import load, Loader, dump
 from fritzconnection import FritzConnection
 
 #VARs
-cfg = []
+cfg = {}
 port_intern = 0
 port_extern = 0
 host_intern = ""
@@ -136,7 +136,7 @@ def task_to_take():
         "NewLeaseDuration": "0"  # Dauer der status setzung... wird aber nur 0 akzeptiert
     }
 
-    username = str(cfg["user"]) # auslesen der ersten Zeile
+    username = cfg["user"] # auslesen der ersten Zeile
     kennwort = cfg["password"] # auslesen der zweiten Zeile
     host = cfg["host"] # auslesen der dritten Zeile
 

@@ -119,9 +119,9 @@ def task_to_take():
 
     print("\nMit Eingabe beginnen ...\n")
     host_intern = input("Host eingeben:\n" + Fore.YELLOW)
-    port_intern = input("\nPort-Intern eingeben:\n" + Fore.YELLOW)
-    port_extern = input("\nPort-Extern eingeben:\n" + Fore.YELLOW)
-    desc = input("\nBeschreibung:\n" + Fore.YELLOW)
+    port_intern = input(Fore.GREEN + "\nPort-Intern eingeben:\n" + Fore.YELLOW)
+    port_extern = input(Fore.GREEN + "\nPort-Extern eingeben:\n" + Fore.YELLOW)
+    desc = input(Fore.GREEN + "\nBeschreibung:\n" + Fore.YELLOW)
     
 
     # Dictonary erstellen für die Daten übergabe zur Fritzbox (TR-064 läuft über XML)

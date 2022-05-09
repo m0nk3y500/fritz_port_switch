@@ -10,9 +10,10 @@ from yaml import load, Loader, dump
 from fritzconnection import FritzConnection
 
 #VAR
-port_intern = 0
-port_extern = 0
+port_intern = ""
+port_extern = ""
 host_intern = ""
+desc = ""
 
 def clear():
       
@@ -119,8 +120,8 @@ def task_to_take():
 
     print("\nMit Eingabe beginnen ...\n")
     host_intern = input("Host eingeben:\n" + Fore.YELLOW)
-    port_intern = input(Fore.GREEN + "\nPort-Intern eingeben:\n" + Fore.YELLOW)
-    port_extern = input(Fore.GREEN + "\nPort-Extern eingeben:\n" + Fore.YELLOW)
+    port_intern = str(input(Fore.GREEN + "\nPort-Intern eingeben:\n" + Fore.YELLOW))
+    port_extern = str(input(Fore.GREEN + "\nPort-Extern eingeben:\n" + Fore.YELLOW))
     desc = input(Fore.GREEN + "\nBeschreibung:\n" + Fore.YELLOW)
     
 

@@ -36,7 +36,7 @@ def look_up():
     print(Fore.WHITE + '----------------------------')
     print(Fore.WHITE + 'Fritz-PortControl from M0nk3y500')
     # time.sleep(0.2)
-    print(Fore.WHITE + 'Version 1.0 - 09.05.2022')
+    print(Fore.WHITE + 'Version 2.0 - 09.05.2022')
     # time.sleep(0.2)
     print(Fore.WHITE + '----------------------------\n')
     # time.sleep(0.2)

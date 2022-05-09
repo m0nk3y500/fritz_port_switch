@@ -136,7 +136,7 @@ def task_to_take():
         "NewLeaseDuration": "0"  # Dauer der status setzung... wird aber nur 0 akzeptiert
     }
 
-    username = cfg["user"] # auslesen der ersten Zeile
+    username = str(cfg["user"]) # auslesen der ersten Zeile
     kennwort = cfg["password"] # auslesen der zweiten Zeile
     host = cfg["host"] # auslesen der dritten Zeile
 

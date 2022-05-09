@@ -3,11 +3,10 @@ Python Scripts for MappingPorts on Frizbox
 
 To Run the Script:
 
-1. create new "venv"
-2. activate venv
-3. install all Libs (show in main.py)
-4. rename config_example.yml in config.yml
-5. change your settings in config
+1. activate venv
+2. install all Libs (show in main.py)
+3. rename config_example.yml in config.yml
+4. change your settings in config
 
 <img width="646" alt="image" src="https://user-images.githubusercontent.com/61576500/167507195-b45eebc9-0ad8-4513-8cd5-21e7a38697f5.png">
 

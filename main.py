@@ -143,12 +143,19 @@ def task_to_take():
         "NewLeaseDuration": "0"  # Dauer der status setzung... wird aber nur 0 akzeptiert
     }
 
-    with open("config.yml", "r") as ymlfile:
-        cfg = load(ymlfile, Loader=Loader)
+    # with open("config.yml", "r") as ymlfile:
+    #     cfg = load(ymlfile, Loader=Loader)
 
-    username = cfg["user"] # auslesen der ersten Zeile
-    kennwort = cfg["password"] # auslesen der zweiten Zeile
-    host = cfg["host"] # auslesen der dritten Zeile
+    # username = cfg["user"] # auslesen der ersten Zeile
+    # kennwort = cfg["password"] # auslesen der zweiten Zeile
+    # host = cfg["host"] # auslesen der dritten Zeile
+
+    local_safe = open('config.txt', 'r+') # pfad der angegebenen Datei
+    inhalt_local_safe = local_safe.read() # datei auslesen
+    inhalt_ready = inhalt_local_safe.splitlines() # die zeilene in liste packen
+    username = inhalt_ready[0] # auslesen der ersten Zeile
+    kennwort = inhalt_ready[1] # auslesen der zweiten Zeile
+    host = inhalt_ready[2] # auslesen der dritten Zeile
 
     # Variable für die Verbindung zu FritzBox festlegen
     fc = FritzConnection(address=host,user=username,password=kennwort)

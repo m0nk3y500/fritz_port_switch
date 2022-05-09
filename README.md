@@ -19,6 +19,10 @@ Change your settings:
 	- change Port and Client Ip for your settings
 
 
+For run:
+
+  	~mv config_example.yml config.yml
+
 Documantation:
 
 	https://avm.de/fileadmin/user_upload/Global/Service/Schnittstellen/AVM_TR-064_first_steps.pdf

@@ -3,25 +3,14 @@ Python Scripts for MappingPorts on Frizbox
 
 To Run the Script:
 
-First Step install Package:
+1. create new "venv"
+2. activate venv
+3. install all Libs (show in main.py)
+4. rename config_example.yml in config.yml
+5. change your settings in config
 
-  	~pip3 install fritzconnection
- 
- 
-Change your settings:
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/61576500/167507195-b45eebc9-0ad8-4513-8cd5-21e7a38697f5.png">
 
-  	- Go in config.txt
-  	- username = your personal created user
-  	- kennwort = the password of the user
- 	 - 192.168.178.1 = is a standart fritz Host 
-
-	- Go in the *.py script
-	- change Port and Client Ip for your settings
-
-
-For run:
-
-  	~mv config_example.yml config.yml
 
 Documantation:
 
